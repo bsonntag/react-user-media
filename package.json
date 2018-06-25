@@ -11,7 +11,7 @@
   ],
   "repository": "git@github.com:bsonntag/react-user-media.git",
   "license": "MIT",
-  "author": "Benjamim Sonntag <benjamimsonntag@seegno.com>",
+  "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
     "bundle": "rm -rf dist && babel src --out-dir dist --ignore *.test.js",
