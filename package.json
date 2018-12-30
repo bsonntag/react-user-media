@@ -51,8 +51,8 @@
     "jest": "^23.6.0",
     "jest-dom": "^3.0.0",
     "parcel": "^1.9.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-testing-library": "^5.4.2"
   },
   "peerDependencies": {
