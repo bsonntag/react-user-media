@@ -1,7 +1,10 @@
 .babelrc
 .cache
+.eslintignore
 .eslintrc.js
 build
 coverage
+example
 jest-setup.js
 src
+yarn.lock
