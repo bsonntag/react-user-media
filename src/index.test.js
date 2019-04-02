@@ -2,7 +2,7 @@ import { render, wait } from 'react-testing-library';
 import React from 'react';
 import UserMedia from '.';
 
-describe('Exaple', () => {
+describe('UserMedia', () => {
   navigator.mediaDevices = navigator.mediaDevices || {};
 
   it('renders the placeholder prop', () => {
