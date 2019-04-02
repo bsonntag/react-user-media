@@ -52,7 +52,7 @@
     "eslint-config-seegno": "^13.0.0",
     "jest": "^24.6.0",
     "jest-dom": "^3.0.0",
-    "parcel": "^1.11.0",
+    "parcel": "^1.12.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-testing-library": "^5.4.2"
