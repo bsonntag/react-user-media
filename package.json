@@ -28,7 +28,9 @@
       "lcov",
       "text"
     ],
-    "setupTestFrameworkScriptFile": "./jest-setup.js",
+    "setupFilesAfterEnv": [
+      "./jest-setup.js"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/build/",
       "<rootDir>/node_modules/"
@@ -45,10 +47,10 @@
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "@bsonntag/react-video": "0.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.6.0",
     "eslint": "^5.16.0",
     "eslint-config-seegno": "^13.0.0",
-    "jest": "^23.6.0",
+    "jest": "^24.6.0",
     "jest-dom": "^3.0.0",
     "parcel": "^1.11.0",
     "react": "^16.7.0",
