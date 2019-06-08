@@ -47,15 +47,15 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@bsonntag/react-video": "0.0.1",
-    "babel-jest": "^24.6.0",
+    "@testing-library/react": "^8.0.1",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
     "eslint-config-seegno": "^13.0.0",
-    "jest": "^24.6.0",
-    "jest-dom": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
     "parcel": "^1.12.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-testing-library": "^5.4.2"
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16.3.0"
