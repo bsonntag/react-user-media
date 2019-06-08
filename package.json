@@ -14,8 +14,8 @@
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "dist/index.js",
   "scripts": {
-    "bundle": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js",
-    "bundle:watch": "babel src --out-dir dist --ignore **/*.test.js --watch",
+    "bundle": "rm -rf dist && babel src --out-dir dist --ignore src/**/*.test.js",
+    "bundle:watch": "babel src --out-dir dist --ignore src/**/*.test.js --watch",
     "start": "parcel serve --out-dir build --port 9000 example/index.html",
     "test": "jest",
     "test:watch": "jest --watch --notify",
