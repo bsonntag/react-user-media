@@ -37,7 +37,7 @@
     ]
   },
   "dependencies": {
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "stop-media-stream": "0.0.2"
   },
   "devDependencies": {
