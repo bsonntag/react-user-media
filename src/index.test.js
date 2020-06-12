@@ -1,4 +1,4 @@
-import { render, wait } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import React from 'react';
 import UserMedia from '.';
 
@@ -15,16 +15,26 @@ describe('UserMedia', () => {
     expect(container).toHaveTextContent('foo');
   });
 
-  it('renders the result of the children prop', async () => {
-    navigator.mediaDevices.getUserMedia = jest.fn(() => Promise.resolve('foo'));
+  it('calls children with the stream and renders its result', async () => {
+    const fakeStream = {
+      getTracks: () => [],
+    };
+
+    navigator.mediaDevices.getUserMedia = jest.fn(() => {
+      return Promise.resolve(fakeStream);
+    });
+
+    const children = jest.fn(() => 'foo');
 
     const { container } = render(
       <UserMedia>
-        {stream => stream}
+        {children}
       </UserMedia>
     );
 
-    await wait(() => expect(container).toHaveTextContent('foo'));
+    await waitFor(() => expect(container).toHaveTextContent('foo'));
+
+    expect(children).toHaveBeenCalledWith(fakeStream);
   });
 
   it('renders the result of the renderError prop when there is an error', async () => {
@@ -34,6 +44,6 @@ describe('UserMedia', () => {
       <UserMedia renderError={stream => stream} />
     );
 
-    await wait(() => expect(container).toHaveTextContent('foo'));
+    await waitFor(() => expect(container).toHaveTextContent('foo'));
   });
 });
