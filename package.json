@@ -38,24 +38,24 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "stop-media-stream": "0.0.2"
+    "stop-media-stream": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
     "@bsonntag/react-video": "0.0.1",
-    "@testing-library/react": "^8.0.1",
+    "@testing-library/jest-dom": "^5.10.0",
+    "@testing-library/react": "^10.2.1",
     "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
     "eslint-config-seegno": "^13.0.0",
-    "jest": "^24.8.0",
-    "jest-dom": "^3.5.0",
-    "parcel": "^1.12.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "jest": "^26.0.1",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
     "react": "^16.3.0"
